@@ -1,12 +1,10 @@
 services:
   - type: web
-    name: swagshots-bot
+    name: swagsbots
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python bitget_trading_bot.py
+    startCommand: ./start.sh
     plan: free
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.8
-      - key: PIP_VERSION
-        value: 21.3.1
