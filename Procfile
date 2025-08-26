@@ -1,1 +1,1 @@
-web: python bitget_trading_bot.py
+web: ./start.sh

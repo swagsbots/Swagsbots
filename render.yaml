@@ -2,7 +2,7 @@ services:
   - type: web
     name: swagshots-bot
     env: python
-    buildCommand: ./build.sh
+    buildCommand: pip install -r requirements.txt
     startCommand: python bitget_trading_bot.py
     plan: free
     envVars:
