@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: swagshots-bot
+    env: python
+    buildCommand: ./build.sh
+    startCommand: python bitget_trading_bot.py
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
