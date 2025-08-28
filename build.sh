@@ -1,3 +1,5 @@
 #!/bin/bash
+# Force Python 3.11
+export PYENV_VERSION=3.11.8
 pip install --upgrade pip
-pip install --no-cache-dir -r requirements.txt
+pip install --only-binary=:all: -r requirements.txt
