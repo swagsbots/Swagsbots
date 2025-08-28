@@ -1,11 +1,16 @@
 import ccxt
 import numpy as np
+import pandas as pd
 import time
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 from dotenv import load_dotenv
+import requests
+import hmac
+import hashlib
+from typing import Dict, Optional, Tuple, List
 
 # Load environment variables
 load_dotenv()
