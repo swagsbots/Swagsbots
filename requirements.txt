@@ -2,3 +2,4 @@ ccxt==4.2.76
 requests==2.31.0
 python-dotenv==1.0.0
 websocket-client==1.6.4
+numpy
